@@ -4,7 +4,7 @@ const ler = require('readline-sync');
 
 let nome = ler.question("Informe o nome do aluno: ");
 let nota1 = ler.questionFloat("Informe a nota 1: ");
-let nota2 = ler.questionFloat("Informe a nota 2: ");
+let nota2 = ler.questionFloat("Informe a \n nota 2: ");
 let nota3 = ler.questionFloat("Informe a nota 3: ");
 
 let media = (nota1 + nota2 + nota3)/3;
