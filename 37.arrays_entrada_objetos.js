@@ -32,15 +32,15 @@ console.log("2.Listar clientes em ordem alfabética.");
 console.log("3. Sair.");
 let opt = ler.questionInt("=> ");
 
-if (opt == 1) {
-    let cli_cart = cliente.filter(c => c.carteira < 100 );
-    console.table(cli_cart);
-} else if (opt == 2){
-    let ordem_alfa = cliente.sort((a, b) => a.nome.localeCompare(b.nome));
-    console.table(ordem_alfa);
-} else {
-    check = false;
-}
+    if (opt == 1) {
+        let cli_cart = cliente.filter(c => c.carteira < 100 );
+        console.table(cli_cart);
+    } else if (opt == 2){
+        let ordem_alfa = cliente.sort((a, b) => a.nome.localeCompare(b.nome));
+        console.table(ordem_alfa);
+    } else {
+        check = false;
+    }
 
 } while (check);
 
