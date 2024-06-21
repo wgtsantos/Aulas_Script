@@ -22,7 +22,10 @@ while (check) {
 }
 
 console.table(cliente);
+check = true;
 
+do {
+    
 console.log("Informe uma das opções:");
 console.log("1.Listar Carteira do cliente com valor menor que 100 reais.");
 console.log("2.Listar clientes em ordem alfabética.");
@@ -36,5 +39,9 @@ if (opt == 1) {
     let ordem_alfa = cliente.sort((a, b) => a.nome.localeCompare(b.nome));
     console.table(ordem_alfa);
 } else {
-    console.log("Sistema Finalizado!!");
+    check = false;
 }
+
+} while (check);
+
+console.log("Sistema Finalizado!");
