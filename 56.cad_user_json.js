@@ -55,5 +55,4 @@ if (opt === 1) {
     setTimeout(() => {
         console.log("SAIU!");
     }, 3000);
-    
 }
