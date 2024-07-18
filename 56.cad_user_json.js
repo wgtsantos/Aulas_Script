@@ -52,4 +52,8 @@ if (opt === 1) {
     exibir();
 } else {
     console.log("Saindo...");
+    setTimeout(() => {
+        console.log("SAIU!");
+    }, 3000);
+    
 }
