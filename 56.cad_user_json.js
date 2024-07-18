@@ -34,7 +34,6 @@ const cadastrar = () => {
 };
 
 const exibir = () => {
-
     users.forEach( user => console.log(
         `------------------------------
          Nome: ${user.nome}
